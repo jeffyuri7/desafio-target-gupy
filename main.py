@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-# from typing import
-
 # Programas do desafio
 
 # Sequencia de Fibonacci
@@ -21,11 +19,18 @@ def fibonacci(numero: int) -> bool:
         else:
             return False
 
-print(fibonacci(4))
 
 def inverte_string(string: str) -> str:
     print(f"Invertendo a string {string}...")
     string_reversa = string[::-1]
     return string_reversa
 
-print(inverte_string("nome"))
+
+
+if __name__ == "__main__":
+    print("Resultado dos testes da Target")
+    print("Faz parte de Fibonnaci" if fibonacci(4) else "Não faz parte de Fibonacci")
+    print("Faz parte de Fibonnaci" if fibonacci(0) else "Não faz parte de Fibonacci")
+    print("Faz parte de Fibonnaci" if fibonacci(13) else "Não faz parte de Fibonacci")
+    print("Agora vamos inverter strings")
+    print(inverte_string("nome"))
